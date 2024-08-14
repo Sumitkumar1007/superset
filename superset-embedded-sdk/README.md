@@ -29,11 +29,11 @@ Embedding is done by inserting an iframe, containing a Superset page, into the h
 Using npm:
 
 ```sh
-npm install --save @superset-ui/embedded-sdk
+npm i superset-embedded-sdk
 ```
 
 ```js
-import { embedDashboard } from "@superset-ui/embedded-sdk";
+import { embedDashboard } from "superset-embedded-sdk";
 
 embedDashboard({
   id: "abc123", // given by the Superset embedding UI
@@ -52,7 +52,7 @@ embedDashboard({
 You can also load the Embedded SDK from a CDN. The SDK will be available as `supersetEmbeddedSdk` globally:
 
 ```html
-<script src="https://unpkg.com/@superset-ui/embedded-sdk"></script>
+<script src="https://unpkg.com/superset-embedded-sdk"></script>
 
 <script>
   supersetEmbeddedSdk.embedDashboard({
